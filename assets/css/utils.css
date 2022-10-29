@@ -1,0 +1,32 @@
+.min-h-100 {
+    min-height: 100vh !important;
+}
+
+.my-btn-outline-primary {
+    background: transparent;
+    padding: 2px 13px;
+    border: 2px solid #742FF9;
+    text-decoration: none;
+    color: #592ab7;
+    border-radius: 2px;
+    transition: 0.1s ease-in-out;
+}
+
+.my-btn-outline-primary:hover {
+    
+    background: #742FF9;
+    color: white;
+}
+
+.my-btn-outline-primary:active {
+    border: 2px solid #632cd2;
+}
+
+.my-text-primary {
+    color: #592ab7;
+}
+
+.table-off {
+    color: #00bc35;
+    font-weight: 600;
+}

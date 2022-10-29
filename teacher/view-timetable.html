@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/datatables.min.css">
+  <link rel="stylesheet" href="../assets/css/utils.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <title>Smart Education Management System - View Timetable</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="d-flex align-items-center">
+      <ul class="list-unstyled align-items-center w-100 my-0 d-flex justify-content-between">
+        <li>
+          <div id="hamburger" class="d-none d-lg-block" onclick="sidebarToggle()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="hamburger-responsive" class="d-block d-lg-none" onclick="sidebarToggleResponsive()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar">
+      <div class="user">
+        <div class="user-logo mb-3">
+          <img src="../assets/img/user.png" alt="userimg" width="100px" />
+        </div>
+        <div class="user-details text-center">
+          <div class="user-name fw-bold fs-5">Teacher Name</div>
+          <div class="user-id fw-semibold">ID: 12345678</div>
+        </div>
+      </div>
+      <div class="menus my-4">
+        <nav>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="index.html" class="sidebar-link">View Attendence</a>
+            </li>
+            <li class="mb-3">
+              <a href="view-timetable.html" class="sidebar-link active">View Timetable</a>
+            </li>
+            <li class="mb-3">
+              <a href="take-attendence.html" class="sidebar-link">Take Attendence</a>
+            </li>
+            <li class="mb-3">
+              <a href="view-datesheet.html" class="sidebar-link">View DateSheet</a>
+            </li>
+            <li class="mb-3">
+              <a href="upload-result.html" class="sidebar-link">Upload Result</a>
+            </li>
+            <li class="mb-3">
+              <a href="download.html" class="sidebar-link">Download</a>
+            </li>
+            <!-- logout -->
+            <li class="mb-3">
+              <a href="" class="sidebar-link">Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- sidebar footer -->
+      <div class="mt-auto mb-2 text-center sidebar-footer">
+        <p class="mb-0 mt-1 fw-semibold">Contact Support</p>
+        <small class="fw-semibold">link2edu@gmail.com</small>
+      </div>
+    </div>
+     <!-- content -->
+    <div id="content">
+      <div class="container mx-0">
+        <h3 class="my-3 fw-normal fst-italic">View Timetable</h3>
+        <select name="" class="p-1 mb-4">
+          <option value="" selected>Evening</option>
+          <option value="">Morning</option>
+        </select>
+        <h6 class="fw-bold mb-3 fst-italic">Timetable of BSCS (viii) [GC] Session (2018-2022)</h6>
+          <div class="table-responsive">
+            <table class="data-table table text-capitalize">
+              <thead>
+                </tr>
+                <tr>
+                  <th>day of study/time</th>
+                  <th>2:15</th>
+                  <th>3:15</th>
+                  <th>4:00</th>
+                  <th>5:30</th>
+                  <th>7:00</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>monday</th>
+                  <td>Arabic lang Pro.Hameed</td>
+                  <td>Distrib DB Prof.Asma</td>
+                  <td class="table-off">OFF</td>
+                  <td>info security Prof.Ahmed</td>
+                  <td class="table-off">OFF</td>
+                </tr>
+                <tr>
+                  <th>tuesday</th>
+                  <td class="table-off">OFF</td>
+                  <td>Distrib DB Prof.Asma</td>
+                  <td>islamiyat Prof.Hameed</td>
+                  <td>info security Prof.Ahmed</td>
+                  <td>Project Prof.Afridi</td>
+                </tr>
+                <tr>
+                  <th>wednesday</th>
+                  <td>Arabic lang Pro.Hameed</td>
+                  <td class="table-off">OFF</td>
+                  <td>islamiyat Prof.Hameed</td>
+                  <td>info security Prof.Ahmed</td>
+                  <td class="table-off">OFF</td>
+                </tr>
+                <tr>
+                  <th>thursday</th>
+                  <td>Arabic lang Pro.Hameed</td>
+                  <td>Distrib DB Prof.Asma</td>
+                  <td class="table-off">OFF</td>
+                  <td>info security Prof.Ahmed</td>
+                  <td>Project Prof.Afridi</td>
+                </tr>
+                <tr>
+                  <th>firday</th>
+                  <td>Arabic lang Pro.Hameed</td>
+                  <td>Distrib DB Prof.Asma</td>
+                  <td>islamiyat Prof.Hameed</td>
+                  <td class="table-off">OFF</td>
+                  <td>Project Prof.Afridi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/datatables.min.js"></script>
+  <script>
+    // calling jquery data table
+    $(document).ready(function () {
+      $('.data-table').DataTable();
+    });
+  </script>
+</body>
+
+</html>

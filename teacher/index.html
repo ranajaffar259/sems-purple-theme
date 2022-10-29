@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/datatables.min.css">
+  <link rel="stylesheet" href="../assets/css/utils.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <title>Smart Education Management System - View Attendence</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="d-flex align-items-center">
+      <ul class="list-unstyled align-items-center w-100 my-0 d-flex justify-content-between">
+        <li>
+          <div id="hamburger" class="d-none d-lg-block" onclick="sidebarToggle()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="hamburger-responsive" class="d-block d-lg-none" onclick="sidebarToggleResponsive()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar">
+      <div class="user">
+        <div class="user-logo mb-3">
+          <img src="../assets/img/user.png" alt="userimg" width="100px" />
+        </div>
+        <div class="user-details text-center">
+          <div class="user-name fw-bold fs-5">Teacher Name</div>
+          <div class="user-id fw-semibold">ID: 12345678</div>
+        </div>
+      </div>
+      <div class="menus my-4">
+        <nav>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="index.html" class="sidebar-link active">View Attendence</a>
+            </li>
+            <li class="mb-3">
+              <a href="view-timetable.html" class="sidebar-link">View Timetable</a>
+            </li>
+            <li class="mb-3">
+              <a href="take-attendence.html" class="sidebar-link">Take Attendence</a>
+            </li>
+            <li class="mb-3">
+              <a href="view-datesheet.html" class="sidebar-link">View DateSheet</a>
+            </li>
+            <li class="mb-3">
+              <a href="upload-result.html" class="sidebar-link">Upload Result</a>
+            </li>
+            <li class="mb-3">
+              <a href="download.html" class="sidebar-link">Download</a>
+            </li>
+            <!-- logout -->
+            <li class="mb-3">
+              <a href="" class="sidebar-link">Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- sidebar footer -->
+      <div class="mt-auto mb-2 text-center sidebar-footer">
+        <p class="mb-0 mt-1 fw-semibold">Contact Support</p>
+        <small class="fw-semibold">link2edu@gmail.com</small>
+      </div>
+    </div>
+     <!-- content -->
+     <div id="content">
+      <div class="container mx-0">
+        <h3 class="my-3 fw-normal fst-italic">View Attendence</h3>
+        <div class="d-flex flex-column flex-md-row align-items-center align-md-items-start">
+          <div class="radialProgressBar progress-90">
+            <div class="overlay fw-bold">
+              <p class="mb-0">Presents</p>
+              <p class="mb-0">265 days</p>
+            </div>
+          </div>
+          <div class="radialProgressBar progress-30">
+            <div class="overlay fw-bold">
+              <p class="mb-0">Absentees</p>
+              <p class="mb-0">30 days</p>
+            </div>
+          </div>
+          <div class="radialProgressBar progress-60">
+            <div class="overlay fw-bold">
+              <p class="mb-0">Leaves</p>
+              <p class="mb-0">22 days</p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="button-totals-div mb-5">
+          <button class="my-btn-outline-primary rounded-5">
+            TOTALS - Out of 317 days (2022)
+          </button>
+        </div>
+      </div>
+      <div class="color-info-head">
+        <div class="color-info">
+          <div class="color-info-item">
+            <span class="box stuck-off-color"></span>
+            <p>STUCK OFF</p>
+          </div>
+          <div class="color-info-item">
+            <span class="box cease-color"></span>
+            <p>CEASE</p>
+          </div>
+          <div class="color-info-item">
+            <span class="box out-color"></span>
+            <p>OUT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/datatables.min.js"></script>
+  <script>
+    // calling jquery data table
+    $(document).ready(function () {
+      $('.data-table').DataTable();
+    });
+  </script>
+</body>
+
+</html>
+
